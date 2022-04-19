@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* style after scrolling */
@@ -25,7 +26,7 @@
 nav {
   width: 100%;
   position: absolute;
-  height: 130px;
+  height: 100px;
   display: flex !important;
   justify-content: space-between;
   z-index: 10;
@@ -36,7 +37,7 @@ nav {
 .logo {
   width: 250px;
   height: 100%;
-  background: green;
+  background: grey;
 }
 
 .links {
@@ -82,13 +83,11 @@ nav {
   top: 0;
   z-index: 22;
   height: 100vh;
-  width: 70%;
+  width: 60%;
   right: 0;
   background: white;
   transform: translateX(100%);
   transition: 1s;
-  /* display: flex; */
-  /* flex-direction: ; */
   overflow-y: hidden;
   padding: 0 0 0 25px;
 }
@@ -221,44 +220,34 @@ nav {
 /* end of main */
 
 /* footer  start*/
-footer {
+footer{
   margin-top: 150px;
-  width: 100%;
-  /* border: 1px solid black; */
-  /* height: 400px; */
-  padding: 0 100px;
 }
 
-.footer-grid {
+.footer-grid{
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.footer-logo-container {
-  width: 50%;
-  height: 100px;
-  width: 100%;
+.footer-logo{
+  height: 120px;
+  width: 200px;
+  background: grey;
+  margin-bottom: 20px;
 }
 
-.footer-logo {
-  height: 100%;
-  width: 50%;
-  background: #000;
-}
-
-.footer-logo-text {
-  margin: 15px 0;
+.footer-logo-text{
   font-size: 13px;
-  width: 100%;
+  color: grey;
 }
+
 
 .footer-links .title {
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 25px;
+  font-size: 25px;
 }
 
 .footer-links .footer-ul {
@@ -270,7 +259,7 @@ footer {
 }
 
 .footer-links .footer-ul a {
-  color: black;
+  color: grey;
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 13px;
@@ -280,21 +269,24 @@ footer {
   color: rgb(212, 137, 38);
 }
 
+
 .footer-icons {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.conact-title {
+.contact-title {
   font-weight: bold;
-  margin: 25px 70px 40px 0;
+  margin: 0px 70px 40px 0;
+  font-size: 25px;
 }
 
 .footer-icons-and-text {
   display: flex;
   flex-direction: column;
   font-size: 13px;
+  color: grey;
 }
 
 .footer-icons .icon {
@@ -318,17 +310,18 @@ footer {
   margin-bottom: 30px;
 }
 
-.bottom-footer {
+.bottom-footer{
+  color: grey;
   font-size: 13px;
-  margin-bottom: 50px;
+  margin: 30px;
 }
 
 .bottom-footer-icons {
   display: flex;
   align-items: center;
-  justify-content: right;
-  /* padding-right: 80px !important; */
+  padding-right: 30px;
 }
+
 
 .bottom-footer-icon-container {
   height: 40px;
