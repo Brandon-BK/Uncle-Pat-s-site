@@ -88,18 +88,36 @@ nav {
 }
 
 .responsive-navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 22;
-  height: 100vh;
+  height: 100%;
   width: 60%;
   right: 0;
   background: white;
+  overflow-y: hidden;
+  padding: 0px 0 0 25px;
+  z-index: 50;
+}
+
+.burger2 div {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.black{
+  position: fixed;
+  height: 100vh;
+  backdrop-filter: contrast(60%);
+  width: 100%;
+  z-index: 40;
+  top: 0;
   transform: translateX(100%);
   transition: 1s;
-  overflow-y: hidden;
-  padding: 20px 0 0 25px;
 }
+
 
 .transition {
   background: yellow;

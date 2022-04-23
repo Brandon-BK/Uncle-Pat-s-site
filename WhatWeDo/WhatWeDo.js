@@ -1,7 +1,9 @@
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector("nav");
-
-  navbar.classList.toggle("scrolling-active", window.scrollY > 0);
+  let burger = document.querySelector(".burger");
+  
+    navbar.classList.toggle("scrolling-active", window.scrollY > 0);
+    burger.classList.toggle("burger2", window.scrollY > 0);
 });
 
 
